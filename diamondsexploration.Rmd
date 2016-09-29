@@ -1,0 +1,84 @@
+---
+title: "Diamonds Exploration"
+author: "Nick Blackbourn"
+date: "September 28, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Reading Data 
+
+```{r}
+mydiamonds=read.csv("diamonds.csv")
+
+
+```
+
+# Dimensions and names of variables
+
+```{r}
+dim(mydiamonds)
+nrow(mydiamonds)
+ncol(mydiamonds)
+```
+
+There are `r nrow(mydiamonds)` in our dataset. 
+
+```{r}
+colnames(mydiamonds)
+mydiamonds=mydiamonds[,2:11]
+```
+
+After knocking off the first column, I am now left with `r ncol(mydiamonds)` columns.
+
+# saving my truncated file
+```{r}
+save(mydiamonds,file="mydiamonds.rda")
+```
+
+# data structure
+
+```{r}
+str(mydiamonds)
+```
+
+# summary
+
+```{r}
+summary(mydiamonds)
+```
+
+number of levels of a factor variable
+
+```{r}
+nlevels(mydiamonds$clarity)
+levels(mydiamonds$clarity)
+```
+
+```{r}
+summary(mydiamonds[c("carat", "cut")])
+summary(mydiamonds)[, c(1,3)]
+```
+
+
+```{r}
+fairdiamonds=mydiamonds[mydiamonds$cut=="Fair",]
+```
+
+```{r}
+levels(fairdiamonds$cut)
+summary(fairdiamonds$cut)
+```
+
+# refactoring after a subset using a factor variable
+
+```{r}
+
+fairdiamonds$cut=factor(fairdiamonds$cut)
+summary(fairdiamonds$cut)
+```
+
+

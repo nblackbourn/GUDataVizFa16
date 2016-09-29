@@ -1,0 +1,135 @@
+---
+title: "mtcars"
+author: "Nick Blackbourn"
+date: "September 27, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r cars}
+summary(cars)
+```
+
+
+
+```{r}
+plot(mtcars$disp)
+```
+
+
+
+```{r}
+plot(mtcars$mpg)
+```
+
+
+
+```{r}
+dim(mtcars)
+```
+
+
+32 rows
+```{r}
+nrow(mtcars)
+```
+
+
+11 columns
+```{r}
+ncol(mtcars)
+```
+
+
+```{r}
+# colnames(mtcars)
+```
+
+
+```{r}
+attributes(mtcars)
+```
+
+
+```{r}
+mtcars[1:5,]
+```
+
+
+```{r}
+head(mtcars)
+```
+
+
+```{r}
+tail(mtcars)
+```
+
+
+```{r}
+summary(mtcars)
+```
+
+
+```{r}
+quantile(mtcars$gear)
+```
+
+
+```{r}
+var(mtcars$drat)
+```
+
+
+
+```{r}
+hist(mtcars$carb)
+```
+
+
+```{r}
+plot(density(mtcars$hp))
+```
+
+
+```{r}
+table(mtcars$wt)
+```
+
+
+```{r}
+pie(table(mtcars$am))
+```
+
+
+
+```{r}
+cov(mtcars$drat, mtcars$qsec)
+```
+
+
+```{r}
+cor(mtcars$cyl, mtcars$mpg)
+```
+
+
+```{r}
+boxplot(mtcars$carb, data=mtcars)
+```
+
+
+```{r}
+plot(jitter(mtcars$wt, jitter(mtcars$gear)))
+```
+
+```{r}
+pairs(mtcars) 
+```
+
+
+

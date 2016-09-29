@@ -1,0 +1,23 @@
+---
+title: "Summary of The Gospel According to Tufte"
+author: "Nick Blackbourn"
+date: "September 20, 2016"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+  
+ After analyzing the piece by Tufte, he makes it very clear which points are the most crucial when putting together graphs for datsets. These include: maximize the data-ink ratio, above all else show the data, emphasize the data, erase non-data and redundant data-ink, and revise and edit.In looking at Tufte's principles, emphasizing and displaying the data can be combined into one for several reasons. When asked to show the data on a graph, not only is your intended purpose or meaning of your diagram crucial, but also how the data curves are depicted. Tufte talks about the graphs each having a similar labeling style or format to make inferences from the different data points. One way to do this is by expanding the date lines with thicker or more pronounced ink that sticks out to the reader. 
+ 
+ One element of erasing non-data ink is the presence of grid lines when plotting graphs. For the most part, grid lines should be avoided on diagrams with the exception of nonograms (graphical calculator), three-dimensional figures, and special cases where it's required to draw a conclusion. If they absolutely need to be used, they should be lightly drawn to prevent them from impacting our conclusions. Another way to condense a graph is to use a half frame as opposed to a full frame. This only utilizes the horizontal and vertical axes and still provides the reader with the same data in a more condensed form. In looking at bar graphs, one can eliminate the bars and utilize line segments to simplify the data and reduce the amount of shading required. 
+ 
+ For redundant data ink, even though many people are able to use the generic concept of symmetry to visualize a full object from only one half shown, Tufte emphasizes the fact that showing the image entirely is the best way to visualize the graph and remember it in the long-term. While it is an important feature to include the whole graph, one should always be looking for ways to simplify and eliminate non-graphical data that takes away from it's intended message.
+ 
+ An important principle that seems to be common in looking at graphs and data is "high data density". This is known as the process of combining several different data groups (200 thermal conductivity measurments in Figure 2.12) into one single graph. While this seems like a crazy course of action, the idea behind Tufte's theory is to spot themes or goals that can be taken away from the graph's intended message. This can be found by looking for clear labeling, shading, and organization of the different data elements. This can be compared to the Shrink Principle in that by simplifying data plots and graphs into one single figure, we are able to make conclusions based on one simplified page instead of multiple scattered pages. 
+ 
+ When looking at graphs, there are many different ways that one can view them as tools for analyzing data. For example, graphs can also serve as tables in that 
+
